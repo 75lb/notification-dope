@@ -6,9 +6,13 @@ module.exports = Notification;
 
 function Notification(options){
     var self = this;
-    spawn("terminal-notifier", [ "-title", options.title, "-message", options.message ])
-        .on("error", function(err){
-            self.emit("error", err);
-        });
+    var handle = spawn("terminal-notifier", [ 
+        "-title", options.title, 
+        "-message", options.message,
+        "-sound", options.sound
+    ]);
+    handle.on("error", function(err){
+        self.emit("error", err);
+    });
 }
 util.inherits(Notification, EventEmitter);
