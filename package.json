@@ -1,0 +1,7 @@
+{
+  "name": "notification-dope",
+  "version": "0.0.0",
+  "description": "Notifications wherever you are",
+  "main": "notification-dope.js",
+  "author": "Lloyd Brookes"
+}
