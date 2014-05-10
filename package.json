@@ -1,6 +1,6 @@
 {
   "name": "notification-dope",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "https://github.com/75lb/notification-dope",
   "description": "Notifications, wherever you are",
   "main": "notification-dope.js",
